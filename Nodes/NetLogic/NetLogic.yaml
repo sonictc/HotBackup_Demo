@@ -1,0 +1,81 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: HotBackupControllerSwitch
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: GenerateNodesIntoModel
+  - Name: TargetFolder
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/HotBackup_Demo/Model/Tags"
+  - Name: DeleteExistingTags
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Class: Method
+    Name: GenerateNodesIntoModel2
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "8f5f00956865759e2f36461037926581",
+       "objectGuid": "b90f19eba6370a147da40ee279ba08a9",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+  - Name: PrimaryTags
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/HotBackup_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags"
+  - Name: SecondaryTags
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/HotBackup_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation2/Tags"
+- Name: FromPlcToModel
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: StartingNodeToFetch
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/HotBackup_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags"
+  - Class: Method
+    Name: GenerateNodesIntoModel
+  - Name: TargetFolder
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/HotBackup_Demo/Model/Tags"
+  - Name: DeleteExistingTags
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "ca08c3f9989e6a81fe78d8172b436a51",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

@@ -1,0 +1,3149 @@
+Name: 'Program:Hot_Backup'
+Type: FolderType
+Children:
+- Name: Hot_Backup
+  Type: Hot_Backup
+  DataType: Hot_Backup
+  Children:
+  - Name: Cfg_PwrUp_Status
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Cfg_PwrUp_Status"
+  - Name: Cmd_InhibitOutputs
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Cmd_InhibitOutputs"
+  - Name: Cmd_UninhibitOutputs
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Cmd_UninhibitOutputs"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.EnableOut"
+  - Name: Event_Log
+    Type: Hot_Backup_Event_Log
+    DataType: Hot_Backup_Event_Log
+    ValueRank: OneDimension
+    ArrayDimensions: [100]
+    Children:
+    - Name: 0
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[0].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[0].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[0].Value"
+    - Name: 1
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[1].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[1].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[1].Value"
+    - Name: 2
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[2].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[2].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[2].Value"
+    - Name: 3
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[3].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[3].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[3].Value"
+    - Name: 4
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[4].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[4].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[4].Value"
+    - Name: 5
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[5].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[5].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[5].Value"
+    - Name: 6
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[6].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[6].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[6].Value"
+    - Name: 7
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[7].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[7].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[7].Value"
+    - Name: 8
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[8].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[8].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[8].Value"
+    - Name: 9
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[9].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[9].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[9].Value"
+    - Name: 10
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[10].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[10].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[10].Value"
+    - Name: 11
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[11].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[11].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[11].Value"
+    - Name: 12
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[12].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[12].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[12].Value"
+    - Name: 13
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[13].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[13].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[13].Value"
+    - Name: 14
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[14].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[14].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[14].Value"
+    - Name: 15
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[15].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[15].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[15].Value"
+    - Name: 16
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[16].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[16].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[16].Value"
+    - Name: 17
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[17].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[17].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[17].Value"
+    - Name: 18
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[18].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[18].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[18].Value"
+    - Name: 19
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[19].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[19].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[19].Value"
+    - Name: 20
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[20].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[20].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[20].Value"
+    - Name: 21
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[21].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[21].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[21].Value"
+    - Name: 22
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[22].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[22].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[22].Value"
+    - Name: 23
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[23].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[23].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[23].Value"
+    - Name: 24
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[24].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[24].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[24].Value"
+    - Name: 25
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[25].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[25].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[25].Value"
+    - Name: 26
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[26].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[26].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[26].Value"
+    - Name: 27
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[27].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[27].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[27].Value"
+    - Name: 28
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[28].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[28].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[28].Value"
+    - Name: 29
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[29].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[29].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[29].Value"
+    - Name: 30
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[30].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[30].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[30].Value"
+    - Name: 31
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[31].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[31].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[31].Value"
+    - Name: 32
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[32].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[32].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[32].Value"
+    - Name: 33
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[33].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[33].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[33].Value"
+    - Name: 34
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[34].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[34].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[34].Value"
+    - Name: 35
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[35].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[35].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[35].Value"
+    - Name: 36
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[36].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[36].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[36].Value"
+    - Name: 37
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[37].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[37].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[37].Value"
+    - Name: 38
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[38].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[38].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[38].Value"
+    - Name: 39
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[39].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[39].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[39].Value"
+    - Name: 40
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[40].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[40].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[40].Value"
+    - Name: 41
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[41].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[41].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[41].Value"
+    - Name: 42
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[42].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[42].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[42].Value"
+    - Name: 43
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[43].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[43].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[43].Value"
+    - Name: 44
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[44].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[44].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[44].Value"
+    - Name: 45
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[45].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[45].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[45].Value"
+    - Name: 46
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[46].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[46].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[46].Value"
+    - Name: 47
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[47].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[47].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[47].Value"
+    - Name: 48
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[48].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[48].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[48].Value"
+    - Name: 49
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[49].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[49].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[49].Value"
+    - Name: 50
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[50].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[50].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[50].Value"
+    - Name: 51
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[51].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[51].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[51].Value"
+    - Name: 52
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[52].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[52].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[52].Value"
+    - Name: 53
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[53].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[53].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[53].Value"
+    - Name: 54
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[54].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[54].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[54].Value"
+    - Name: 55
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[55].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[55].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[55].Value"
+    - Name: 56
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[56].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[56].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[56].Value"
+    - Name: 57
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[57].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[57].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[57].Value"
+    - Name: 58
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[58].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[58].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[58].Value"
+    - Name: 59
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[59].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[59].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[59].Value"
+    - Name: 60
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[60].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[60].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[60].Value"
+    - Name: 61
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[61].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[61].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[61].Value"
+    - Name: 62
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[62].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[62].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[62].Value"
+    - Name: 63
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[63].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[63].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[63].Value"
+    - Name: 64
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[64].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[64].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[64].Value"
+    - Name: 65
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[65].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[65].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[65].Value"
+    - Name: 66
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[66].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[66].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[66].Value"
+    - Name: 67
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[67].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[67].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[67].Value"
+    - Name: 68
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[68].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[68].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[68].Value"
+    - Name: 69
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[69].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[69].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[69].Value"
+    - Name: 70
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[70].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[70].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[70].Value"
+    - Name: 71
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[71].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[71].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[71].Value"
+    - Name: 72
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[72].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[72].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[72].Value"
+    - Name: 73
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[73].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[73].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[73].Value"
+    - Name: 74
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[74].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[74].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[74].Value"
+    - Name: 75
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[75].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[75].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[75].Value"
+    - Name: 76
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[76].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[76].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[76].Value"
+    - Name: 77
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[77].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[77].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[77].Value"
+    - Name: 78
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[78].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[78].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[78].Value"
+    - Name: 79
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[79].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[79].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[79].Value"
+    - Name: 80
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[80].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[80].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[80].Value"
+    - Name: 81
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[81].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[81].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[81].Value"
+    - Name: 82
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[82].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[82].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[82].Value"
+    - Name: 83
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[83].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[83].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[83].Value"
+    - Name: 84
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[84].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[84].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[84].Value"
+    - Name: 85
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[85].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[85].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[85].Value"
+    - Name: 86
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[86].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[86].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[86].Value"
+    - Name: 87
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[87].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[87].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[87].Value"
+    - Name: 88
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[88].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[88].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[88].Value"
+    - Name: 89
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[89].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[89].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[89].Value"
+    - Name: 90
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[90].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[90].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[90].Value"
+    - Name: 91
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[91].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[91].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[91].Value"
+    - Name: 92
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[92].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[92].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[92].Value"
+    - Name: 93
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[93].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[93].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[93].Value"
+    - Name: 94
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[94].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[94].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[94].Value"
+    - Name: 95
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[95].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[95].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[95].Value"
+    - Name: 96
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[96].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[96].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[96].Value"
+    - Name: 97
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[97].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[97].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[97].Value"
+    - Name: 98
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[98].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[98].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[98].Value"
+    - Name: 99
+      Type: Hot_Backup_Event_Log
+      DataType: Hot_Backup_Event_Log
+      Children:
+      - Name: DateTime
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        ValueRank: OneDimension
+        ArrayDimensions: [7]
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[99].DateTime"
+      - Name: Event_Name
+        Type: RAEtherNetIPTag
+        DataType: String
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[99].Event_Name"
+      - Name: Value
+        Type: RAEtherNetIPTag
+        DataType: Int32
+        Children:
+        - Name: SymbolName
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "Program:Hot_Backup.Hot_Backup.Event_Log[99].Value"
+  - Name: Event_Log_Entry
+    Type: Hot_Backup_Event_Log
+    DataType: Hot_Backup_Event_Log
+    Children:
+    - Name: DateTime
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [7]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Hot_Backup.Hot_Backup.Event_Log_Entry.DateTime"
+    - Name: Event_Name
+      Type: RAEtherNetIPTag
+      DataType: String
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Hot_Backup.Hot_Backup.Event_Log_Entry.Event_Name"
+    - Name: Value
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:Hot_Backup.Hot_Backup.Event_Log_Entry.Value"
+  - Name: Event_Log_Index
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Event_Log_Index"
+  - Name: Event_Log_Name_List
+    Type: RAEtherNetIPTag
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [15]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Event_Log_Name_List"
+  - Name: Sts_OutputsFaulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Sts_OutputsFaulted"
+  - Name: Sts_OutputsInhibited
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Sts_OutputsInhibited"
+  - Name: Sts_PeerReady
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Sts_PeerReady"
+  - Name: Sts_PostActionDelay
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Sts_PostActionDelay"
+  - Name: Sts_Primary
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Sts_Primary"
+  - Name: Sts_Secondary
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:Hot_Backup.Hot_Backup.Sts_Secondary"

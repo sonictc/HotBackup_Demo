@@ -1,0 +1,417 @@
+Name: HotBackup
+Type: FolderType
+Children:
+- Name: ControllerA_Primary
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Hot_Backup/Hot_Backup/Sts_Primary"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ControllerB_Primary
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation2/Tags/Program&:Hot_Backup/Hot_Backup/Sts_Primary"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: PrimaryActiveTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../ControllerA_Primary"
+  - Name: VariableTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../NetLogic/HotBackupControllerSwitch@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "GenerateNodesIntoModel"
+    - Name: EventArguments
+      Type: VariableTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+- Name: PrimaryActiveTransitioned1
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../ControllerA_Secondary"
+- Name: SecondaryActiveTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../ControllerB_Primary"
+  - Name: VariableTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../NetLogic/HotBackupControllerSwitch@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "GenerateNodesIntoModel2"
+    - Name: EventArguments
+      Type: VariableTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+- Name: ControllerB_Secondary
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation2/Tags/Program&:Hot_Backup/Hot_Backup/Sts_Primary"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: SecondaryActiveTransitioned1
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+    Value: 1.0
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../ControllerB_Secondary"
+- Name: ControllerA_Secondary
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:Hot_Backup/Hot_Backup/Sts_Primary"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ControllerA_PrimaryTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../ControllerA_Primary"
+  - Name: VariableTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../NetLogic/HotBackupControllerSwitch@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "GenerateNodesIntoModel2"
+    - Name: EventArguments
+      Type: VariableTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+- Name: ControllerB_PrimaryTransitioned
+  Type: VariableTransitionEventDispatcher
+  Children:
+  - Name: Value
+    Type: BaseVariableType
+    DataType: Double
+  - Name: Transition
+    Type: BaseVariableType
+    DataType: VariableTransition
+  - Name: VariableNodePath
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../ControllerB_Primary"
+  - Name: VariableTransitionEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableTransitionEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=2;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../../NetLogic/HotBackupControllerSwitch@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              Value: 2
+        - Name: ns=2;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "GenerateNodesIntoModel"
+    - Name: EventArguments
+      Type: VariableTransitionEvent
+      Children:
+      - Name: VariableNodeId
+        Type: BaseVariableType
+        DataType: NodeId
+      - Name: NewValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: OldValue
+        Type: BaseVariableType
+        DataType: BaseDataType
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16

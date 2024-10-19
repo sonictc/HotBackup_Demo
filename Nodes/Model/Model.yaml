@@ -1,0 +1,5 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Tags/Tags.yaml
+- File: HotBackup/HotBackup.yaml

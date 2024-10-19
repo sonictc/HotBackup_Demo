@@ -1,0 +1,145 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: Hot_Backup_Event_Log1
+  Id: g=27cb0f76739a6138acdb3c0bfbd091dc
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Hot_Backup_Event_Log",
+    "DataType": {
+     "IdType": 2,
+     "Id": "27cb0f76739a6138acdb3c0bfbd091dc",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "DateTime",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Event_Name",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Hot_Backup_Event_Log"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Hot_Backup1
+  Id: g=36303d5eb1cce8e1fdce1f504f2d9c41
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Hot_Backup",
+    "DataType": {
+     "IdType": 2,
+     "Id": "36303d5eb1cce8e1fdce1f504f2d9c41",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cfg_PwrUp_Status",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cmd_InhibitOutputs",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Cmd_UninhibitOutputs",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Event_Log",
+      "DataType": {
+       "IdType": 2,
+       "Id": "27cb0f76739a6138acdb3c0bfbd091dc",
+       "Namespace": 7
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [100]
+     },{
+      "Name": "Event_Log_Entry",
+      "DataType": {
+       "IdType": 2,
+       "Id": "27cb0f76739a6138acdb3c0bfbd091dc",
+       "Namespace": 7
+      }
+     },{
+      "Name": "Event_Log_Index",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Event_Log_Name_List",
+      "DataType": {
+       "Id": 12
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [15]
+     },{
+      "Name": "Sts_OutputsFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_OutputsInhibited",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_PeerReady",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_PostActionDelay",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Primary",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Secondary",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Hot_Backup"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

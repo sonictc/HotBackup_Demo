@@ -1,0 +1,28 @@
+Name: Controller Tags
+Id: g=0dc4067409aae71ce802ca8d9d84e419
+Type: FolderType
+Children:
+- Name: DINT
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DINT"
+- Name: REAL
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "REAL"
+- Name: Manual_Switchover_PB
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Manual_Switchover_PB"

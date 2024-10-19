@@ -1,0 +1,11 @@
+Name: 'Program:MainProgram'
+Type: FolderType
+Children:
+- Name: ProgramTag
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.ProgramTag"
